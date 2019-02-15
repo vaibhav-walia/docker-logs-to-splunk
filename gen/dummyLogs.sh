@@ -12,4 +12,5 @@ do
     echo '[info] This is an information'
   fi
   # echo ran
+  sleep 5
 done

@@ -23,8 +23,8 @@ do
              --log-opt splunk-url=$splunk_endpoint \
              --log-opt splunk-insecureskipverify=true \
              --log-opt tag="fakelogs/{{.FullID}}" \
-             --log-opt labels=location \
-             --label location=west \
+             --log-opt labels=container \
+             --label container="fakelog/$i" \
          fakelogs
   ((i++))
 done
@@ -40,8 +40,8 @@ do
              --log-opt splunk-url=$splunk_endpoint \
              --log-opt splunk-insecureskipverify=true \
              --log-opt tag="petclinic/{{.FullID}}" \
-             --log-opt labels=location \
-             --label location=west \
+             --log-opt labels=container \
+             --label container="petclinic/$i" \
          petclinic
   ((i++))
 done
