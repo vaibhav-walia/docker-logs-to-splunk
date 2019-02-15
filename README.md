@@ -2,7 +2,9 @@
 Spawn docker containers and forward logs to a splunk instance
 
 ### Prerequisites
+
 Make sure you have the following:
+
 | Software | Download Link |
 | ------ | ------ |
 | Docker | https://www.docker.com/get-started |
